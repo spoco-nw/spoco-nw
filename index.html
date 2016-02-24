@@ -1,280 +1,51 @@
 ---
+layout: events
+weight: 1
+title: "Home"
+body: events
 ---
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>#beerclub</title>
-  <meta >
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,900&text=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ%2C.%22%3A%5B%5D()'rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Euphoria+Script&text=theruls' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
+<h2 class="events__about-title events__about-title--section">Events</h2>
 
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      border-top: solid 20px #981c21;
-      font: 16px/1.2em normal "Lato", "Helvetica Neue", "Arial", sans-serif;
-      text-align: center;
-      color: #fff;
-      background: #d73939;
-    }
-    h1 {
-      margin: 1em 0 0;
-      font-size: 3em;
-      text-shadow: -3px 7px rgba(0,0,0,0.2);
-    }
-    h2 {
-      font: 2em normal "Euphoria Script";
-      margin: 1.2em 0 -0.2em;
-    }
+<ul class="events__list">
 
-    ol.rules {
-      width: 200px;
-      margin: 0 auto 10px;
-      padding: 1em 2.8em;
-      font-size: 0.8em;
-      color:#fff;
-      background: #d73939;
-      border-radius: 15px;
-      box-shadow: 0 10px 0 0 #981c21;
-      list-style-position: inside;
-      text-indent: -1em;
-    }
-      ol.rules li {
-        text-align:left;
-        line-height: 1.2em;
-        margin-bottom:0.5em;
-      }
+	{% for event in site.data.events %}
 
-    ul {
-      margin:0 2em;
-      padding:2em 0;
-      background: #d73939 url('./stripe.gif') 50% repeat-y;
-    }
-      ul li {
-        margin: 7em 0;
-        padding: 0;
-        list-style: none;
-        position: relative;
-        z-index: 1;
-      }
-      ul li p {
-        margin: 0.5em;
-        line-height: 1.2em;
-      }
+		<li class="module events__list-item {% if forloop.last == true %}last{% endif %}" id="NWSpoCo-Event-{{ forloop.index }}">
 
-    a:link,
-    a:visited {
-      color:#ff9ea9;
-      color:#ff8f8c;
-      text-decoration: none;
-      padding-bottom: 0.3em;
-      border-bottom: solid 1px #ff8f8c;
-    }
-    a:hover,
-    a:focus {
-      color:#fff;
-    }
-      a.photo img {
-        background-color: #d73939;
-      }
+			{% comment %}
+				{% include calendar.html event=event %}
+			{% endcomment %}
+			
+			{% capture hrs %}{{ event.dt | date: "%H" | times: 1 }}{% endcapture %}
+			
+			{% assign hrs = hrs | times: 1 %}
+			
+			{% assign event_num = forloop.index %}
 
-    a.photo {
-      border-bottom-style: none;
-    }
-    a.photo:hover img {
-      background-color: #981c21;
-    }
+			<div class="events__details">
+				<span class="events__list-text event">Event: {{ event_num }}</span>
+				<span class="events__list-text date-wrapper">Date: <time class="events__time{% if hrs > 17 %} evening{% else %} daytime{% endif %}" datetime="{{ event.dt | date_to_xmlschema }}">{{ event.dt | date: "%A, %-d %B" }}, {{ event.dt | date: "%H:%M" }}</time></span>
+				<span class="events__list-text course">Course: <a href="{{ event.course_url }}" title="View this course on the Timetrial Courses website">{{ event.course }}</a></span>
+				<span class="events__list-text distance">Distance: {{ event.distance }}</span>
+				<span class="events__list-text elevation_gain">Elevation gain: {{ event.elevation_gain }}</span>
+				<span class="events__list-text club">Club: <a href="{{ event.club_web }}">{{ event.club }}</a></span>
+				{% comment %}<span class="events__list-text contact">Contact: {% if event.contact_ema != null %}<a href="mailto:{{ event.contact_ema }}">{{ event.contact }}</a>{% else %}{{ event.contact }}{% endif %}</span>{% endcomment %}
+				{% comment %}<span class="events__list-text contact dont-break-out">Website: <a href="{{ event.web }}">{{ event.web }}</a></span>{% endcomment %}
+				{% for ctt in event.ctt_event %}
+					<span class="events__list-text contact dont-break-out">CTT Event: <a href="{{ ctt.url }}">{{ ctt.url }}</a></span>
+				{% endfor %}
+				<a href="{{ event.course_url }}" title="View this course on the Timetrial Courses website">
+					<picture class="events__list_img">
+						<img src="img/courses/{{ event.img }}" alt="{{ event.course }}" />
+					</picture>
+				</a>
+			</div>
+			
+			{% include social-media.html event=event index=event_num %}
 
-    time {
-      background: #fff;
-      color:#d73939;
-      padding:0.2em 0.5em;
-      margin:0.4em;
-      border-radius: 3px
-    }
+		</li>
 
-    .drop {
-      font-size: 1.4em;
-    }
-      .drop span {
-        color: #8b191f;
-      }
+	{% endfor %}
 
-    img {
-      width: 100px;
-      height: 100px;
-      border-radius: 108px;
-      border: solid 2px #fff;
-      margin: 0 0 1em;
-      padding: 6px;
-      box-shadow: -10px 15px 0px 0 rgba(0,0,0,0.2);
-    }
-
-    footer {
-      margin: 0;
-      padding:2em 4em 4em;
-      background-color: #191919;
-      font-size: 0.9em;
-      color:#ccc;
-    }
-      footer a:link,
-      footer a:visited {
-        color: #981c21;
-        border-color: #981c21;
-      }
-      footer a:hover,
-      footer a:focus {
-        color: #fff;
-        border-color: #fff;
-      }
-
-			.ribbon-wrapper {
-				-webkit-transition: -webkit-transform .3s ease-in-out;
-			}
-
-			.ribbon-wrapper>span {
-				 width: 100px;
-				 position: relative;
-				 display: block;
-				 background: white;
-				 color: #d73939;
-				 -webkit-box-sizing: border-box;
-				 min-width: 160px;
-				 height: 40px;
-				 line-height: 40px;
-				 -webkit-transform-style: preserve-3d;
-				 margin: -10px auto 50px;
-			}
-
-			.ribbon-wrapper>span:before, .ribbon-wrapper>span:after {
-				 content: "";
-				 position: absolute;
-				 display: block;
-				 top: -10px;
-				 border: 20px solid #F5F5F5;
-				 z-index: -1;
-				 -webkit-transform: translateZ(-1px);
-			}
-
-			.ribbon-wrapper>span:before {
-			 left: -30px;
-			 border-right-width: 20px;
-			 border-left-color: transparent;
-			}
-
-			.ribbon-wrapper>span:after {
-			 right: -30px;
-			 border-left-width: 20px;
-			 border-right-color: transparent;
-			}
-
-			.ribbon-wrapper>span span:before, .ribbon-wrapper>span span:after {
-			 content: "";
-			 position: absolute;
-			 display: block;
-			 border-style: solid;
-			 border-color: transparent transparent gray transparent;
-			 top: -10px;
-			}
-			.ribbon-wrapper>span span:before {
-			 left: 0;
-			 border-width: 0 0 10px 10px;
-			}
-			.ribbon-wrapper>span span:after {
-			 right: 0;
-			 border-width: 0 10px 10px 0;
-			}
-
-			a.photo:hover ~ .ribbon-wrapper {
-				-webkit-transform: translateY(-2em);
-			}
-
-			.come-in {
-			  -webkit-transform: translateY(150px);
-			  				transform: translateY(150px);
-			  -webkit-animation: come-in 0.8s ease forwards;
-			  				animation: come-in 0.8s ease forwards;
-			}
-
-			.already-visible {
-			  -webkit-transform: translateY(0);
-			  -webkit-animation: none;
-			}
-
-			@-webkit-keyframes come-in {
-			  to { -webkit-transform: translateY(0); }
-			}
-
-			@keyframes come-in {
-			  to { -webkit-transform: translateY(0); }
-			}
-
-
-    @media all and (min-width: 600px) {
-      h1 {
-        font-size: 6em;
-        text-shadow: -3px 10px rgba(0,0,0,0.2);
-      }
-      h2 {
-        font-size: 2.8em;
-        margin: 1.4em 0 -0.2em;
-      }
-      ol.rules {
-        font-size: 0.9em;
-        width: 310px;
-      }
-
-			.ribbon {
-				font-size: 1em;
-				width: 150px;
-			}
-
-    }
-
-  </style>
-</head>
-<body>
-  <header>
-    <h1>#BEERCLUB</h1>
-    <h2>rules</h2>
-    <ol class="rules">
-      <li>You do not talk about beer club.</li>
-      <li>You can talk about beer club if you like. It's fine.</li>
-    </ol>
-  </header>
-  <ul>
-  {% for drop in site.data.drops %}
-    <li class="module">
-      <p><time datetime="{{ drop.date }}">{{ drop.date | date_to_string }}</time></p>
-      <a class="photo" href="{{ drop.instagramUrl }}" id="{{ drop.beer | replace: ' ', '_' }}">
-        <img src="{{ drop.instagramUrl }}/media/?size=t" />
-      </a>
-      {% if drop.award %}
-    	<div class="ribbon-wrapper">
-	    	<span>
-	    		<span>{{drop.award}}</span>
-	    	</span>
-	    </div>
-			{% endif %}
-      <p class="drop">{{ drop.beer }} <span>from</span> {{ drop.brewery }}</p>
-      <p class="description">{{ drop.description }}</p>
-      <p>Brought to the club by <a class="member" href="http://twitter.com/{{ drop.member }}">@{{ drop.member }}</a></p>
-    </li>
-  {% endfor %}
-  </ul>
-  <footer>
-    <p>#beerclub takes place each thursday afternoon at <a href="http://rga.com">R/GA London</a></p>
-    <p>Update this site on <a href="https://github.com/philhawksworth/beerclub/blob/gh-pages/_data/drops.yml">Github</a></p>
-  </footer>
-
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="animatedScroll.js"></script>
-
-</body>
-</html>
+</ul>

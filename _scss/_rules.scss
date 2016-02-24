@@ -1,0 +1,37 @@
+.rules {
+	
+	&__list {
+		list-style-position: inside;
+		list-style-type: none;
+		margin-top: 4%;
+		margin-right: auto;
+		margin-bottom: 6%;
+		margin-left: auto;
+		padding: 0;
+		width: 86%;
+		@include mq-min(small) {
+			width: 60%;
+		}
+	}
+	
+	&__item {
+		line-height: 1.6;
+		list-style: none;
+		margin-right: 0;
+		margin-left: 0;
+		margin-top: 4%;
+		padding: 0 0 0 0;		
+		span {
+			display: block;
+			font-weight: bold;
+		}
+		a {
+			text-decoration: underline;
+		}	
+	}	
+	
+	p a {
+		text-decoration: underline;
+	}
+
+}

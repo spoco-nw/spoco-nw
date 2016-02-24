@@ -1,0 +1,13 @@
+name: SpoCo North West Time Trial Series
+markdown: kramdown
+highlighter: rouge # pygments or rouge or null
+exclude: ["node_modules", "gruntfile.js", "gulpfile.js", "package.json", ".git", ".sass-cache", "modernizr-config.json","README.md","TODO.md","Gemfile","Gemfile.lock"]
+#baseurl: /
+#url: http://spoco-nw.dev
+url: http://spoco-nw.org.uk
+sass:
+    sass_dir: _scss
+    
+email: spoco.nw@gmail.com
+
+hashtags: SpoCo,TimeTrial

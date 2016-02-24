@@ -1,0 +1,105 @@
+- date: Sunday, 20 March
+  start_time: 08:00:00
+  dt: "2016-03-20 08:00:00 +0000"
+  club: Crewe Clarion Wheelers
+  course: J8/2R
+  course_url: http://www.timetrialcourses.co.uk/course/j8_2r
+  distance: 16.5 Miles
+  elevation_gain: 639ft
+  contact: Andrew Grace
+  contact_ema: andrew.grace@dicksonssolicitors.co.uk
+  ctt_event: 
+   - url: http://www.cyclingtimetrials.org.uk/event/20753
+  club_web: http://www.creweclarionwheelers.org/
+  img: j8_2r.png
+  
+- date: Friday, 25 March
+  start_time: 11:00:00
+  dt: "2016-03-25 11:00:00 +0000"
+  club: Buxton Cycling Club
+  course: J8/3
+  course_url: http://www.timetrialcourses.co.uk/course/j8_3
+  distance: 33 miles (men/espoirs), 22 miles (women/juniors)
+  elevation_gain: 3300ft/2180ft
+  contact: Steve l'Anson
+  contact_ema: buxtonMTT@hotmail.co.uk
+  ctt_event: 
+    - url: http://www.cyclingtimetrials.org.uk/event/20769
+    - url: http://www.cyclingtimetrials.org.uk/event/20770
+  club_web: http://www.buxtoncyclingclub.co.uk
+  img: j8_3.png
+
+- date: Sunday, 17 April
+  start_time: 09:00:00
+  dt: "2016-04-17 09:00:00 +0000"
+  club: Glossop Kinder Velo
+  course: J8/4
+  course_url: http://www.timetrialcourses.co.uk/course/j8_4
+  distance: 26.2 miles
+  elevation_gain: 3443ft
+  contact: Mark Nulty
+  contact_ema: marknulty@hotmail.co.uk
+  ctt_event: 
+    - url: http://www.cyclingtimetrials.org.uk/event/20877
+  club_web: http://www.glossopkindervelo.co.uk
+  img: j8_4.png
+  
+- date: Wednesday, 18 May
+  start_time: 18:45:00
+  dt: "2016-05-18 18:45:00 +0000"
+  club: Saddleworth Clarion
+  course: J8/7R
+  course_url: http://www.timetrialcourses.co.uk/course/j8_7
+  distance: 17.7 miles
+  elevation_gain: 1979ft
+  contact: Chris Moreman
+  contact_ema: chrismoreman@googlemail.com
+  ctt_event: 
+    - url: http://www.cyclingtimetrials.org.uk/event/21047
+  club_web: http://www.saddleworthclarion.co.uk
+  img: j8_7r.png
+  
+- date: Wednesday, 15 June
+  start_time: 19:00:00
+  dt: "2016-06-15 19:00:00 +0000"
+  club: Peak Road Club
+  course: O17C
+  course_url: http://www.timetrialcourses.co.uk/course/017c
+  distance: 17.5 miles
+  elevation_gain: 1248ft
+  contact: Chris Myhill
+  contact_ema: chrismyhill@btinternet.com
+  ctt_event: 
+    - url: http://www.cyclingtimetrials.org.uk/event/21223
+  club_web: http://www.peakroadclub.co.uk
+  img: o17c.png
+  
+- date: Sunday, 26 June
+  start_time: 11:00:00
+  dt: "2016-06-26 11:00:00 +0000"
+  club: Manchester Wheelers’ Club
+  course: J8/25
+  course_url: http://www.timetrialcourses.co.uk/course/j8_25 
+  distance: 20.5 miles
+  elevation_gain: 1802ft
+  contact: Tom Goldthorpe
+  contact_ema: goldthorpe.tom@gmail.com
+  ctt_event: 
+    - url: http://www.cyclingtimetrials.org.uk/event/21313
+  club_web: http://www.manchesterwheelers.co.uk
+  img: j8_25.png
+
+- date: Sunday, 31 July  
+  start_time: 09:00:00
+  dt: "2016-07-31 09:00:00 +0000"
+  club: Manchester Bicycle Club
+  course: J8/23 (2 laps)
+  course_url: http://www.timetrialcourses.co.uk/course/j8_23
+  distance: 26.5 miles
+  elevation_gain: 3112ft
+  contact: Martin Harney
+  contact_ema: martin.harney@live.co.uk
+  ctt_event: 
+    - url: http://www.cyclingtimetrials.org.uk/event/21506
+  club_web: http://www.manchesterbicycleclub.org
+  img: j8_23.png

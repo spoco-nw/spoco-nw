@@ -27,31 +27,3 @@
   };
 
 })(jQuery);
-
-var win = $(window);
-var allMods = $(".module");
-var isTouch = function() {
-	return ('ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch);
-};
-var isScrolled = $('body').scrollTop() > 0 ? true : false;
-
-if(!isTouch() && !isScrolled ) {
-
-	allMods.each(function(i, el) {
-	  var el = $(el);
-	  if (el.visible(true)) {
-	    el.addClass("already-visible");
-	  }
-	});
-
-	win.scroll(function(event) {
-
-	  allMods.each(function(i, el) {
-	    var el = $(el);
-	    if (el.visible(true)) {
-	      el.addClass("come-in");
-	    }
-	  });
-	});
-
-}

@@ -1,0 +1,14 @@
+.header {
+
+	&__banner {
+		margin-top: 4em;
+	} 
+	
+	&__logo {
+		width: 80%;
+		@include mq-min(small) {
+			width: 40%;
+		}
+	}
+	
+}
