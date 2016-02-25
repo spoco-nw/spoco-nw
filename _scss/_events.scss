@@ -10,16 +10,18 @@
 		line-height: 1.6;
 		list-style-position: inside;
 		list-style-type: none;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 40px;
 		padding-bottom: 4%;
-		padding-left: 5.6%;
-		padding-right: 5%;
+		padding-left: 10px;
+		padding-right: 10px;
 		padding-top: 4%;
 		width: 86%;
 		@include mq-min(small) {
+			padding-left: 5%;
+			padding-right: 5%;			
 			font-size: 1.2em;
 			width: 60%;
 		}
@@ -45,18 +47,20 @@
 	}
 		
 	&__list {
-// 		background-color: transparent;
-// 		background-image: url('../img/stripe.png');
-// 		background-position: 50% 50%;
-// 		background-repeat: repeat-y;	
 		margin-bottom: 0;
-		margin-left: 2em;
-		margin-right: 2em;
+		margin-left: 10px;
+		margin-right: 10px;
 		margin-top: 0;
 		padding-bottom: 6em;
-		padding-left: 10%;
-		padding-right: 10%;
+		padding-left: 10px;
+		padding-right: 10px;
 		padding-top: 0.1em;
+		@include mq-min(small) {
+			margin-left: 2em;
+			margin-right: 2em;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
 	}
 	
 	&__list-item {

@@ -5,10 +5,10 @@ title: "Home"
 body: events
 ---
 
-<h2 class="events__about-title events__about-title--section">Events</h2>
-
 <ul class="events__list">
-
+	
+	<li class="module events__list-item"><h2 class="events__about-title events__about-title--section">Events</h2></li>
+	
 	{% for event in site.data.events %}
 
 		<li class="module events__list-item {% if forloop.last == true %}last{% endif %}" id="NWSpoCo-Event-{{ forloop.index }}">

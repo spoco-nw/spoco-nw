@@ -10,9 +10,11 @@ body: results
 <div id="results" class="results">
 
 	<div class="results__controls">
-		<label for="filter">Search:</label>
-		<input id="filter" type="search" class="search light-table-filter" data-table="order-table" placeholder="Search for...">
-		<span> &nbsp;Sort:</span>
+		<div class="results__fieldset">
+			<label for="filter">Search:</label>
+			<input id="filter" type="search" class="search light-table-filter" data-table="order-table" placeholder="Search for...">
+		</div>
+		<span class="results__filter-label"> &nbsp;Sort:</span>
 		<button class="sort" data-sort="position">position</button>
 		<button class="sort" data-sort="name">name</button>
 		<button class="sort" data-sort="points">points</button>

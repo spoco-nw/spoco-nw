@@ -20,12 +20,15 @@ body {
 }
 
 main {
+	margin: 0 auto;
+	max-width: 1200px;
 	padding-bottom: 80px;
 	padding-bottom: 20vh;
+	padding-top: 40px;
 }
 
-.rules main {
-	padding-top: 40px;
+.events main {
+	padding-top: 0;
 }
 
 .fig {
