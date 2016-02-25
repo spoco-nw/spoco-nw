@@ -12,10 +12,10 @@
 
 .position-fixed-top {
 	position: fixed !important;
-	top: 40px;
+	top: 34px;
 	@include mq-min(small) {
 		position: fixed !important;
-		top: 64px;
+		top: 58px;
 	}
 }
 	

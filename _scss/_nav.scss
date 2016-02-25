@@ -17,7 +17,6 @@
         transform: translateX(-100%);
         transition: 250ms transform cubic-bezier(0, 0, .58, 1);
         width: 100%;
-        z-index: 2;
 
         &--hide {
             transform: translateX(-100%);

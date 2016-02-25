@@ -72,7 +72,7 @@
         margin-top: 3em;
         padding: 0 0 0 0;
         position: relative;
-        z-index: 1;	
+
         &:first-child {
         	margin-top: 1.4em;
         }
@@ -130,13 +130,6 @@
 	}
 
     &__time {
-//       background: White;
-//       color: $highlight;
-//       padding-top: 0.2em;
-//       padding-right: 0.5em;
-//       padding-bottom: 0.2em;
-//       padding-left: 0.5em;
-//       border-radius: 3px;
 		&.evening:after {
 			font-family: 'SpoCoNW';
         	content: ' \e90d'; 
