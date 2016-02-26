@@ -1,29 +1,38 @@
 .nav {
     
     &__menu {
-        background-image: none !important;
-        background: $primary;
-        bottom: 0;
-        display: block;
-        overflow-y: auto;
-        padding-top: 0;
-        padding-right: 10px;
-        padding-bottom: 0;
-        padding-left: 10px;
-        position: fixed;
-        right: 0;
-        top: 0;
-        text-align: center;
-        transform: translateX(-100%);
-        transition: 250ms transform cubic-bezier(0, 0, .58, 1);
-        width: 100%;
+				background-image: none !important;
+				background: $primary;
+				bottom: 0;
+				display: block;
+				height:auto; /* iOS position:fixed; elements fix (not 100%) */
+				min-height:100%;
+				overflow-x: hidden;
+				overflow-y: auto;
+				padding-bottom: 0;
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 0;
+				position: fixed;
+				right: 0;
+				text-align: center;
+				top: 0;
+				-webkit-transform: translateX(-100%); 
+				-ms-transform: translateX(-100%); 
+				transform: translateX(-100%);
+				transition: 250ms transform cubic-bezier(0, 0, .58, 1);
+				width: 100%;
 
         &--hide {
-            transform: translateX(-100%);
+						-webkit-transform: translateX(-100%); 
+						-ms-transform: translateX(-100%);
+						transform: translateX(-100%);
         }
 
         &--show {
-            transform: translateX(0);
+						-webkit-transform: translateX(0); 
+						-ms-transform: translateX(0); 
+						transform: translateX(0);
         }
     }
 
