@@ -59,7 +59,7 @@ Riders can choose to ride the event on any individual machine that complies with
 
 ## 4. Prizes
 
-<a href="http://www.onimpex.co.uk/"><span class="nowrap">OMNIPEX-BIORACER</span></a> has kindly offered <a href="/sponsors_prizes/">winners jerseys for the overall winners</a>.
+<a href="http://www.onimpex.co.uk/"><span class="nowrap">OMNIPEX-BIORACER UK</span></a> has kindly offered <a href="/sponsors_prizes/">winners jerseys for the overall winners</a>.
 
 <figure class="fig fig--alt">
 	<img class="fig__img" src="../img/bioracer-barrier-bw.svg" alt="Bioracer logo" />
