@@ -4,8 +4,6 @@ exclude: 'yes'
 
 @import "variables";
 
-@import "normalize";
-
 @import "mixins";
 
 @import "utils";
@@ -16,25 +14,19 @@ exclude: 'yes'
 
 @import "type";
 
-@import "header";
+@import "about";
+
+@import "content";
 
 @import "footer";
 
+@import "header";
+
 @import "nav";
-
-@import "text";
-
-@import "ribbon";
 
 @import "results";
 
-@import "addtocalendar"; 
-
-@import "events";
-
 @import "scroll-effects";
-    
-@import "images";
 
 
 

@@ -5,13 +5,13 @@ title: "Home"
 body: events
 ---
 
-<ul class="events__list">
-	
-	<li class="module events__list-item"><h2 class="events__about-title events__about-title--section">Events</h2></li>
+<ul class="content__list">
+
+	<li class="content__list-item"><h2 class="h2">Events</h2></li>
 	
 	{% for event in site.data.events %}
 
-		<li class="module events__list-item {% if forloop.last == true %}last{% endif %}" id="NWSpoCo-Event-{{ forloop.index }}">
+		<li class="module content__list-item{% if forloop.last == true %} last{% endif %}" id="NWSpoCo-Event-{{ forloop.index }}">
 
 			{% comment %}
 				{% include calendar.html event=event %}
@@ -23,20 +23,20 @@ body: events
 			
 			{% assign event_num = forloop.index %}
 
-			<div class="events__details">
-				<span class="events__list-text event">Event: {{ event_num }}</span>
-				<span class="events__list-text date-wrapper">Date: <time class="events__time{% if hrs > 17 %} evening{% else %} daytime{% endif %}" datetime="{{ event.dt | date_to_xmlschema }}">{{ event.dt | date: "%A, %-d %B" }}, {{ event.dt | date: "%H:%M" }}</time></span>
-				<span class="events__list-text course">Course: <a href="{{ event.course_url }}" title="View this course on the Timetrial Courses website">{{ event.course }}</a></span>
-				<span class="events__list-text distance">Distance: {{ event.distance }}</span>
-				<span class="events__list-text elevation_gain">Elevation gain: {{ event.elevation_gain }}</span>
-				<span class="events__list-text club">Club: <a href="{{ event.club_web }}">{{ event.club }}</a></span>
-				{% comment %}<span class="events__list-text contact">Contact: {% if event.contact_ema != null %}<a href="mailto:{{ event.contact_ema }}">{{ event.contact }}</a>{% else %}{{ event.contact }}{% endif %}</span>{% endcomment %}
-				{% comment %}<span class="events__list-text contact dont-break-out">Website: <a href="{{ event.web }}">{{ event.web }}</a></span>{% endcomment %}
+			<div class="content__details">
+				<span class="content__list-field event">Event: {{ event_num }}</span>
+				<span class="content__list-field date-wrapper">Date: <time class="content__time{% if hrs > 17 %} evening{% else %} daytime{% endif %}" datetime="{{ event.dt | date_to_xmlschema }}">{{ event.dt | date: "%A, %-d %B" }}, {{ event.dt | date: "%H:%M" }}</time></span>
+				<span class="content__list-field course">Course: <a href="{{ event.course_url }}" title="View this course on the Timetrial Courses website">{{ event.course }}</a></span>
+				<span class="content__list-field distance">Distance: {{ event.distance }}</span>
+				<span class="content__list-field elevation_gain">Elevation gain: {{ event.elevation_gain }}</span>
+				<span class="content__list-field club">Club: <a href="{{ event.club_web }}">{{ event.club }}</a></span>
+				{% comment %}<span class="content__list-field contact">Contact: {% if event.contact_ema != null %}<a href="mailto:{{ event.contact_ema }}">{{ event.contact }}</a>{% else %}{{ event.contact }}{% endif %}</span>{% endcomment %}
+				{% comment %}<span class="content__list-field contact dont-break-out">Website: <a href="{{ event.web }}">{{ event.web }}</a></span>{% endcomment %}
 				{% for ctt in event.ctt_event %}
-					<span class="events__list-text contact dont-break-out">CTT Event: <a href="{{ ctt.url }}">{{ ctt.url }}</a></span>
+					<span class="content__list-field contact dont-break-out">CTT Event: <a href="{{ ctt.url }}">{{ ctt.url }}</a></span>
 				{% endfor %}
 				<a href="{{ event.course_url }}" title="View this course on the Timetrial Courses website">
-					<picture class="events__list_img">
+					<picture class="content__list-img">
 						<img src="img/courses/{{ event.img }}" alt="{{ event.course }}" />
 					</picture>
 				</a>
@@ -49,3 +49,4 @@ body: events
 	{% endfor %}
 
 </ul>
+

@@ -1,6 +1,6 @@
 body {
 	color: $body_copy;
-	font-family: "Roboto Slab", "Lucida Serif", "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-family: #{$font-stack};
 	font-weight: normal;
 	line-height: 1.2;
 	text-align: center;
@@ -39,6 +39,9 @@ a:visited {
 	color: $highlight;
 	cursor: pointer;
 	text-decoration: underline;
+	.events & {
+		text-decoration: none;
+	}
 }
 a:hover,
 a:focus {

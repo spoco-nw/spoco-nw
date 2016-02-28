@@ -7,27 +7,27 @@ body: rules
 
 ## 1. Rules
 
-<ul class="text__list">
-	<li class="text__item">Each event in the Series is an Open Time Trial, run by a promoting Club, for and on behalf of <a href="http://www.cyclingtimetrials.org.uk">Cycling Time Trials</a>, under their Rules & Regulations.</li>
-	<li class="text__item">Any eligible member of a Club affiliated to <a href="http://www.cyclingtimetrials.org.uk">Cycling Time Trials</a> can enter any of the events.</li>
-	<li class="text__item">There is no requirement for either Clubs or Riders to affiliate to SpoCo North West to be eligible to take part and score points in the league. </li>
-	<li class="text__item">All riders, riding as an individual and on an individual machine, will automatically be entered for the league upon completing an event in the Series and receiving a finishing position.</li>
+<ul class="content__list">
+	<li class="content__list-item">Each event in the Series is an Open Time Trial, run by a promoting Club, for and on behalf of <a href="http://www.cyclingtimetrials.org.uk">Cycling Time Trials</a>, under their Rules & Regulations.</li>
+	<li class="content__list-item">Any eligible member of a Club affiliated to <a href="http://www.cyclingtimetrials.org.uk">Cycling Time Trials</a> can enter any of the events.</li>
+	<li class="content__list-item">There is no requirement for either Clubs or Riders to affiliate to SpoCo North West to be eligible to take part and score points in the league. </li>
+	<li class="content__list-item">All riders, riding as an individual and on an individual machine, will automatically be entered for the league upon completing an event in the Series and receiving a finishing position.</li>
 </ul>
 
 ## 2. Scoring
 
 The competition is run on a points basis. Riders will be awarded points based on their finishing position within their gender category. First place in each category will be awarded 100 points, reducing by 1 point for each subsequent place, down to 10 points. After 91st place, all finishers will receive 10 points.
 
-<ul class="text__list">
-	<li class="text__item">1st male = 100 points</li>
-	<li class="text__item">2nd male = 99 points</li>
-	<li class="text__item">3rd male = 98 points&hellip;</li>
+<ul class="content__list">
+	<li class="content__list-item">1st male = 100 points</li>
+	<li class="content__list-item">2nd male = 99 points</li>
+	<li class="content__list-item">3rd male = 98 points&hellip;</li>
 </ul>
 
-<ul class="text__list">
-	<li class="text__item">1st female = 100 points</li>
-	<li class="text__item">2nd female = 99 points</li>
-	<li class="text__item">3rd female = 98 points&hellip;</li>
+<ul class="content__list">
+	<li class="content__list-item">1st female = 100 points</li>
+	<li class="content__list-item">2nd female = 99 points</li>
+	<li class="content__list-item">3rd female = 98 points&hellip;</li>
 </ul>
 
 **_Note: Buxton CC Event_** — In the men’s event at the Buxton Mountain Time Trial, Juniors, Seniors, and Veterans compete in different distance events over either two or three laps. The two and three lap races will be scored separately, with the 1st place male in the 2 lap race receiving 100 points and the 1st place male in the 3 lap race also receiving 100 points. In the women’s race, all age groups compete over 2 laps, and points will be allocated as they would in the other events in the Series with the 1st place lady receiving 100 points, regardless of their age category.
@@ -39,14 +39,14 @@ There are seven qualifying events in the series. Riders can enter as many or as 
 
 Each award will be split into separate gender categories:
 
-<ul class="text__list">
-	<li class="text__item"><span>Overall</span> (all ages in each gender)</li>
-	<li class="text__item"><span>Junior</span> (riders 18 years old and younger on 31 December 2016)</li>
-	<li class="text__item"><span>Veterans over 40</span> (on the date of their first qualifying event)</li>
-	<li class="text__item"><span>Veterans over 50</span> (on the date of their first qualifying event)</li>
-	<li class="text__item"><span>Veterans over 60</span> (on the date of their first qualifying event)</li>
-	<li class="text__item"><span>Veterans over 70</span> (on the date of their first qualifying event)</li>
-	<li class="text__item"><span>Team of 3</span></li>
+<ul class="content__list">
+	<li class="content__list-item"><span>Overall</span> (all ages in each gender)</li>
+	<li class="content__list-item"><span>Junior</span> (riders 18 years old and younger on 31 December 2016)</li>
+	<li class="content__list-item"><span>Veterans over 40</span> (on the date of their first qualifying event)</li>
+	<li class="content__list-item"><span>Veterans over 50</span> (on the date of their first qualifying event)</li>
+	<li class="content__list-item"><span>Veterans over 60</span> (on the date of their first qualifying event)</li>
+	<li class="content__list-item"><span>Veterans over 70</span> (on the date of their first qualifying event)</li>
+	<li class="content__list-item"><span>Team of 3</span></li>
 </ul>
 
 Teams will include any one Club’s three best scoring riders from either the male or female Overall results categories. Riders changing Clubs mid-season will accrue points for the Club they are in at the time of each event. Points will not be transferred between Clubs if a rider moves to a new Club.

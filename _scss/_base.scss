@@ -7,11 +7,6 @@ body {
 	background: $bg;
 	border-top: solid 10px $primary;
 	font-size: 16px;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
 	&:before {
 		background-color: $secondary;
 		content: ' ';
@@ -25,19 +20,8 @@ body {
 }
 
 main {
-    margin: 0 auto;
-	@include mq-min(small) {
-	    margin: 0 auto;
-	    max-width: 1200px;
-	}
-
 	padding-bottom: 80px;
 	padding-bottom: 20vh;
-	padding-top: 40px;
-}
-
-.events main {
-	padding-top: 0;
 }
 
 .fig {
@@ -73,42 +57,3 @@ main {
 		width: 240px;
 	}
 }
-
-.course a:after {
-	font-family: 'SpoCoNW' !important;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	content: "\00a0\e904";
-}
-
-/* Style external links */
-
-// a[href^="http://"]:not([href*="0.0.0.0"]):after,
-// a[href^="https://"]:not([href*="0.0.0.0"]):after,
-// a[href^="//"]:not([href*="0.0.0.0"]):after, {
-//     font-family: 'SpoCoNW' !important;
-//     speak: none;
-//     font-style: normal;
-//     font-weight: normal;
-//     font-variant: normal;
-//     text-transform: none;
-//     line-height: 1;
-//     margin-left: .125em;
-//     content: "\e906";
-// }
-
-// a[href^="http://www.cyclingtimetrials.org.uk"]:after,
-// a[href^="https://www.cyclingtimetrials.org.uk"]:after {
-//     font-family: 'SpoCoNW' !important;
-//     speak: none;
-//     font-style: normal;
-//     font-weight: normal;
-//     font-variant: normal;
-//     text-transform: none;
-//     line-height: 1;
-//     content: " \e904";
-// }
