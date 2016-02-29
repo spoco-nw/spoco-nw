@@ -104,6 +104,10 @@
         }
     }
 
+    &__menu--hide > &__close { // hide the open button when not in use
+        display: none;
+    }
+
     @include mq-min(small) {
         &__open {
             font-size: 4em;
@@ -165,7 +169,8 @@
 
     @include mq-min(small) {
         &__list {
-            margin: 0 auto;
+            margin: 14% auto auto auto;
+            margin: 14vh auto auto auto;
         }
         &__link {
             margin: 80px 0;
