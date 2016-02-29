@@ -1,12 +1,17 @@
 .nav {
-    
+
+	// reverse order of child elems, so we can use general sibling seletcor
+	// to appear to select preceeding sibling, so we can hide the menu__open
+	// button when not in use, but use display fixed at all other times
+    direction: rtl;
+
     &__menu {
-    
+
 		background-image: none !important;
 		background: $primary;
-		bottom: 0;
+		bottom: 100%;
 		display: block;
-		height: auto; /* iOS position:fixed; elements fix (not 100%) */
+		height: 100%; /* iOS position:fixed; elements fix (not 100%) */
 		min-height: 100%;
 		overflow-x: hidden;
 		overflow-y: auto;
@@ -18,45 +23,49 @@
 		right: 0;
 		text-align: center;
 		top: 0;
-		-webkit-transform: translateX(-100%); 
-		-ms-transform: translateX(-100%); 
+		-webkit-transform: translateX(-100%);
+		-ms-transform: translateX(-100%);
 		transform: translateX(-100%);
 		transition: 250ms transform cubic-bezier(0, 0, .58, 1);
 		width: 100%;
 
         &--hide {
-			-webkit-transform: translateX(-100%); 
+			-webkit-transform: translateX(-100%);
 			-ms-transform: translateX(-100%);
 			transform: translateX(-100%);
         }
 
         &--show {
-			-webkit-transform: translateX(0); 
-			-ms-transform: translateX(0); 
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
 			transform: translateX(0);
         }
-    
+
     }
 
     &__list {
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-padding-start: 0;
         margin: 14% auto auto auto;
         margin: 14vh auto auto auto;
+        padding-left: 1.2em;
         text-align: center;
         width: 65%;
     }
-      
+
     &__open,
-    &__close {  
+    &__close {
         &:link,
         &:visited {
             color: darken($secondary,10%);
-            text-decoration: none;         
+            text-decoration: none;
         };
         &:hover,
         &:active,
         &:focus {
             color: darken($primary,10%);
-        }    
+        }
     }
 
     &__open {
@@ -69,7 +78,7 @@
             border-bottom: none !important;
         }
     }
-    
+
     &__open:after {
         content: 'Info';
         display: block;
@@ -78,7 +87,11 @@
         position: relative;
         top: -10px;
     }
-    
+
+    &__menu--show ~ &__open { // hide the open button when not in use
+        display: none;
+    }
+
     &__close {
         border-bottom: none !important;
         font-size: 1.8em;
@@ -90,7 +103,7 @@
             border-bottom: none !important;
         }
     }
-    
+
     @include mq-min(small) {
         &__open {
             font-size: 4em;
@@ -114,13 +127,13 @@
     }
 
     &__link {
-    
+
         list-style: none;
         margin: 12px 0;
         margin: 1vh 0;
         padding: 8px;
         position: relative;
-        
+
         a {
             background: $white;
             border-radius: 6px;
@@ -135,14 +148,14 @@
             padding-left: 0.5em;
             padding-right: 0.5em;
             padding-top: 0.6em;
-            text-decoration: none;           
+            text-decoration: none;
             @include mq-min(small) {
             	font-size: 1.2em;
             }
-            &:link, 
-            &:visited, 
-            &:hover, 
-            &:active, 
+            &:link,
+            &:visited,
+            &:hover,
+            &:active,
             &:focus {
                 border-bottom: none;
                 padding-bottom: 0.6em;
@@ -152,7 +165,7 @@
 
     @include mq-min(small) {
         &__list {
-            margin: 12% auto auto auto;
+            margin: 0 auto;
         }
         &__link {
             margin: 80px 0;
