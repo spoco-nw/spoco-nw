@@ -1,5 +1,5 @@
 ---
-layout: events
+layout: default
 weight: 1
 title: "Home"
 body: events
@@ -8,7 +8,7 @@ body: events
 <ul class="content__list">
 
 	<li class="content__list-item"><h2 class="h2">Events</h2></li>
-	
+
 	{% for event in site.data.events %}
 
 		<li class="module content__list-item{% if forloop.last == true %} last{% endif %}" id="NWSpoCo-Event-{{ forloop.index }}">
@@ -16,11 +16,11 @@ body: events
 			{% comment %}
 				{% include calendar.html event=event %}
 			{% endcomment %}
-			
+
 			{% capture hrs %}{{ event.dt | date: "%H" | times: 1 }}{% endcapture %}
-			
+
 			{% assign hrs = hrs | times: 1 %}
-			
+
 			{% assign event_num = forloop.index %}
 
 			<div class="content__details">
@@ -41,7 +41,7 @@ body: events
 					</picture>
 				</a>
 			</div>
-			
+
 			{% include social-media.html event=event index=event_num %}
 
 		</li>

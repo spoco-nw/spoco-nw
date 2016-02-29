@@ -5,22 +5,22 @@
 	font-size: 0.9em;
 	margin: 0;
 	padding-top: 2em;
-	padding-right: 4em;
+	padding-right: 20px;
 	padding-bottom: 150px;
-	padding-left: 4em;
-	
+	padding-left: 20px;
+
 	&__link {
 		&:link,
 		&:visited {
 			border-color: $highlight;
-			color: lighten($highlight, 20%);		
+			color: lighten($highlight, 20%);
 		};
 		&:hover,
 		&:active,
 		&:focus {
 			border-color: $white;
-			color: $white;		
+			color: $white;
 		}
 	}
-	
+
 }
