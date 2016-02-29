@@ -34,7 +34,6 @@ The competition is run on a points basis. Riders will be awarded points based on
 
 There are seven qualifying events in the series. Riders can enter as many or as few events as they wish. The rider’s best scores from FIVE events will be counted.
 
-
 ## 3. Award Categories
 
 Each award will be split into separate gender categories:

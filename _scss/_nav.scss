@@ -23,11 +23,11 @@
 		right: 0;
 		text-align: center;
 		top: 0;
+		width: 100%;
 		-webkit-transform: translateX(-100%);
 		-ms-transform: translateX(-100%);
 		transform: translateX(-100%);
 		transition: 250ms transform cubic-bezier(0, 0, .58, 1);
-		width: 100%;
 
         &--hide {
 			-webkit-transform: translateX(-100%);
@@ -145,7 +145,7 @@
             color: $highlight;
             display: block;
             font-size: .8em;
-            font-size: 2vw;
+            font-size: 4vw;
             font-weight: bold;
             line-height: 1.2em;
             padding-bottom: 0.8em;
