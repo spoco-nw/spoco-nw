@@ -104,7 +104,7 @@
         }
     }
 
-    &__menu--hide > &__close { // hide the open button when not in use
+    &__menu--hide > &__close { // hide the close button when not in use
         display: none;
     }
 
